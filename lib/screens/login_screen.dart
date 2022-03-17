@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_button.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -27,12 +29,13 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           CustomButton(
             text: 'Google Sign In',
-            onPressed: () async {
-              bool res = await _authMethods.signInWithGoogle(context);
-              if (res) {
-                Navigator.pushNamed(context, '/home');
-              }
-            },
+            onPressed: () {}
+          //   async {
+          //     bool res = await _authMethods.signInWithGoogle(context);
+          //     if (res) {
+          //       Navigator.pushNamed(context, '/home');
+          //     }
+          //   },
           ),
         ],
       ),
