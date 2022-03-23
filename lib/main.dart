@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoom_clone/screens/home_screen.dart';
 import 'package:zoom_clone/screens/login_screen.dart';
 import 'package:zoom_clone/utils/colors.dart';
 
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor
       ),
-      routes: ,
+      routes: {
+        '/login' : (context) => const LoginScreen(),
+        '/home-screen' : (context) => const HomeScreen()
+      },
       home: LoginScreen()
     );
   }
