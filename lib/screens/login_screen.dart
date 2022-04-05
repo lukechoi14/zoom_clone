@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           const Text(
             'Start or join a meeting',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),

@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../resources/jitsi_meet_methods.dart';
 import '../widgets/home_meeting_button.dart';
 
 
